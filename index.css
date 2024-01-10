@@ -51,6 +51,7 @@ body{
 .section{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 0 70px 80px 70px;
 }
 
@@ -101,32 +102,30 @@ footer img {
     text-align: right;
 }
 
-@media screen and (max-width: 600px) {
-
-    body{
-        text-align: center;
+@media only screen and (max-width: 600px) {
+    header {
+      height: 200px;
+      font-size: 15px;
+      text-align: start;
     }
-
-    #img-h1{
-        text-align: left;
-        margin-left: -90px;
+  
+    header h1 {
+      font-size: 4vh;
     }
-
-    .section{
-        flex-direction: column;
+  
+    header h5 {
+      font-size: 15px;
     }
-    
-    .price-add{
-        margin-bottom: 8px;
-        justify-content: space-evenly;
+  
+    .header-text {
+      padding: 0% 60% 5% 5%;
     }
-
-    .section-header{
-        padding-left: 0;
+  
+    body {
+      text-align: center;
     }
-
-    .top-bar h3{
-        margin-left:-200px;
-        margin-top: 20px;
+  
+    .container {
+      justify-content: center;
     }
-}
+  }
